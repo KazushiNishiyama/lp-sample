@@ -212,6 +212,20 @@ h1 {
   align-items: center;
 }
 
+.portfolio-note {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.portfolio-note a {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;

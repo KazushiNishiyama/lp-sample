@@ -15,10 +15,11 @@ const koukokuImages = [
 ];
 
 const lpImages = [
+  "ig_050a05ff53af9361016a000884c1e0819188cb75395ee7e7de.png",
+  "ig_0f8c415dc22c32fc016a00a6bdfb388191b7cfc2b1a0fc7fb9.png",
   "musicjam-lp3-2.png",
   "ig_0abc31912799f35a016a0021dfa0c0819185303f0a3d6d8813.png",
   "ig_0abc31912799f35a016a002615a3d88191a7a2d46e6caacbc0.png",
-  "ig_0abc31912799f35a016a002b2fee988191a7be5f42c03703da.png",
 ];
 
 const slideImages = [
