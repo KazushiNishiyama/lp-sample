@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Creative Portfolio | 生成成果物プレビュー</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AI Creative Portfolio">
+        <span class="brand-mark"></span>
+        <span>AI Creative Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <a href="#works">制作事例</a>
+        <a href="#ads">広告</a>
+        <a href="#lp">LP</a>
+        <a href="#slides">スライド</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Image2 + Codex Production</p>
+          <h1>
+            <span>AI導入で作れる成果物を、</span>
+            <span>実物で見せる。</span>
+          </h1>
+          <p class="lead">
+            広告バナー、LPデザイン、提案スライドまで。フォルダ内の生成物をそのまま使い、
+            企業向け商談で説明しやすいポートフォリオLPにまとめました。
+          </p>
+          <div class="proof-grid" aria-label="成果物数">
+            <div>
+              <strong>13</strong>
+              <span>広告バナー</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>LPデザイン</span>
+            </div>
+            <div>
+              <strong>10</strong>
+              <span>提案スライド</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#works">制作事例を見る</a>
+            <a class="button secondary" href="#lp">LPデザインを見る</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <img
+            src="../Koukoku/ig_0d5743337ded92db016a002f4cf4f08191a73c2a82276c348d.png"
+            alt="3D & MUSIC JAMの広告バナー生成例"
+          />
+        </figure>
+      </section>
+
+      <section class="overview" id="works" aria-label="制作カテゴリ">
+        <article>
+          <span class="category-icon">AD</span>
+          <h2>広告クリエイティブ</h2>
+          <p>訴求別・媒体別に展開しやすい横長バナーを一覧で確認できます。</p>
+        </article>
+        <article>
+          <span class="category-icon">LP</span>
+          <h2>LPデザイン</h2>
+          <p>ファーストビューからCTAまで、縦長ページの完成イメージを見せられます。</p>
+        </article>
+        <article>
+          <span class="category-icon">SL</span>
+          <h2>提案スライド</h2>
+          <p>導入説明、制作プロセス、活用メリットを資料として伝えられます。</p>
+        </article>
+      </section>
+
+      <section class="section" id="ads">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Koukoku</p>
+            <h2>広告バナー</h2>
+          </div>
+          <p>
+            実際の <code>Koukoku</code> フォルダ内の画像を表示しています。クリックで拡大表示できます。
+          </p>
+        </div>
+        <div class="ad-grid" id="adGrid"></div>
+      </section>
+
+      <section class="section split-section" id="lp">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LPImage</p>
+            <h2>LPデザイン</h2>
+          </div>
+          <p>
+            縦長LPはブラウザ枠の中でスクロールできます。候補を切り替えて比較できます。
+          </p>
+        </div>
+        <div class="lp-workspace">
+          <aside class="lp-selector" id="lpList" aria-label="LP候補一覧"></aside>
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <small id="lpName">LP Design 01</small>
+            </div>
+            <div class="lp-scroll">
+              <img id="lpPreview" alt="選択中のLPデザイン" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="slides">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Slide</p>
+            <h2>提案スライド</h2>
+          </div>
+          <p>
+            <code>Slide</code> フォルダの生成スライドを横並びで確認できます。商談中は拡大して1枚ずつ見せられます。
+          </p>
+        </div>
+        <div class="slide-grid" id="slideRail"></div>
+      </section>
+
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="icon-button" id="closeLightbox" aria-label="閉じる">×</button>
+      <img id="lightboxImage" alt="" />
+      <p id="lightboxCaption"></p>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
