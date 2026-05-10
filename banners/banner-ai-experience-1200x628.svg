@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628" role="img" aria-labelledby="title desc">
+  <title id="title">AIクリエイティブ体験会 横長バナー</title>
+  <desc id="desc">3D & MUSIC JAMのAI体験会を告知する広告バナー</desc>
+  <rect width="1200" height="628" fill="#fbf7ef"/>
+  <rect x="64" y="64" width="434" height="500" fill="#151922"/>
+  <rect x="96" y="98" width="78" height="30" fill="#55c79a"/>
+  <text x="96" y="202" fill="#ffffff" font-size="62" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">AIで</text>
+  <text x="96" y="278" fill="#ffffff" font-size="62" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">作品づくり</text>
+  <text x="96" y="352" fill="#ffffff" font-size="62" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">体験</text>
+  <text x="96" y="422" fill="#f2c94c" font-size="24" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="700">イラスト・動画・LP制作を</text>
+  <text x="96" y="454" fill="#f2c94c" font-size="24" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="700">未経験から</text>
+  <rect x="96" y="492" width="232" height="52" fill="#f2674a"/>
+  <text x="124" y="527" fill="#ffffff" font-size="24" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">見学受付中</text>
+  <rect x="560" y="92" width="520" height="308" fill="#ffffff" stroke="#151922" stroke-opacity=".16"/>
+  <rect x="596" y="128" width="224" height="40" fill="#151922"/>
+  <rect x="596" y="188" width="426" height="16" fill="#d9cec0"/>
+  <rect x="596" y="222" width="360" height="16" fill="#d9cec0"/>
+  <rect x="596" y="278" width="154" height="48" fill="#55c79a"/>
+  <circle cx="998" cy="142" r="54" fill="#f2c94c"/>
+  <rect x="606" y="438" width="120" height="84" fill="#5878d9"/>
+  <rect x="750" y="438" width="120" height="84" fill="#f2674a"/>
+  <rect x="894" y="438" width="120" height="84" fill="#55c79a"/>
+  <text x="560" y="556" fill="#151922" font-size="28" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">3D &amp; MUSIC JAM</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="728" height="90" viewBox="0 0 728 90" role="img" aria-labelledby="title desc">
+  <title id="title">AIクリエイティブ体験会 リーダーボードバナー</title>
+  <desc id="desc">3D & MUSIC JAMのAI体験会を告知する横長広告</desc>
+  <rect width="728" height="90" fill="#151922"/>
+  <rect x="14" y="14" width="64" height="62" fill="#55c79a"/>
+  <text x="96" y="38" fill="#f2c94c" font-size="18" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="800">3D &amp; MUSIC JAM</text>
+  <text x="96" y="66" fill="#ffffff" font-size="25" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="900">AIで作品づくり体験</text>
+  <rect x="542" y="21" width="150" height="48" fill="#f2674a"/>
+  <text x="570" y="53" fill="#ffffff" font-size="20" font-family="Yu Gothic, Meiryo, sans-serif" font-weight="900">見学受付中</text>
+</svg>
