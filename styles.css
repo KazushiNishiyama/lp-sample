@@ -279,6 +279,11 @@ h2 {
   margin-bottom: 28px;
 }
 
+.compact-section-head {
+  grid-template-columns: 1fr;
+  margin-bottom: 18px;
+}
+
 .ad-grid,
 .slide-grid {
   display: grid;
@@ -291,6 +296,30 @@ h2 {
 
 .slide-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.slide-tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.slide-tab {
+  min-height: 44px;
+  padding: 0 18px;
+  color: var(--muted);
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.slide-tab.is-active {
+  color: #fff;
+  background: var(--blue);
+  border-color: var(--blue);
 }
 
 .preview-card {

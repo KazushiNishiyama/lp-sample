@@ -32,6 +32,29 @@ const slideImages = [
   "slide-07.png",
 ];
 
+const slideDecks = [
+  {
+    label: "提案スライド",
+    slides: slideImages.map((name, index) => ({
+      src: `./Slide/image2-sample-style/${name}`,
+      title: `提案スライド ${String(index + 1).padStart(2, "0")}`,
+    })),
+  },
+  {
+    label: "AI活用スライド",
+    slides: [
+      ...["slide-01.png", "slide-02.png", "slide-03.png"].map((name, index) => ({
+        src: `./Slide/ai-agent-2026-02-image2-text-heavy/${name}`,
+        title: `AI活用スライド ${String(index + 1).padStart(2, "0")}`,
+      })),
+      ...["slide-01.png", "slide-02.png", "slide-03.png"].map((name, index) => ({
+        src: `./Slide/ai-business-workflow-image2/${name}`,
+        title: `AI活用スライド ${String(index + 4).padStart(2, "0")}`,
+      })),
+    ],
+  },
+];
+
 const lightbox = document.querySelector("#lightbox");
 const lightboxImage = document.querySelector("#lightboxImage");
 const lightboxCaption = document.querySelector("#lightboxCaption");
@@ -119,15 +142,39 @@ function renderLpList() {
 
 function renderSlides() {
   const rail = document.querySelector("#slideRail");
-  slideImages.forEach((name, index) => {
-    rail.append(
-      createPreviewCard({
-        src: `./Slide/image2-sample-style/${name}`,
-        title: `提案スライド ${String(index + 1).padStart(2, "0")}`,
-        meta: "16:9",
-      }),
-    );
+  const tabs = document.querySelector("#slideDeckTabs");
+
+  function selectDeck(index) {
+    const deck = slideDecks[index];
+    rail.replaceChildren();
+
+    deck.slides.forEach((slide) => {
+      rail.append(
+        createPreviewCard({
+          src: slide.src,
+          title: slide.title,
+          meta: "16:9",
+        }),
+      );
+    });
+
+    tabs.querySelectorAll(".slide-tab").forEach((button, buttonIndex) => {
+      button.classList.toggle("is-active", buttonIndex === index);
+      button.setAttribute("aria-selected", String(buttonIndex === index));
+    });
+  }
+
+  slideDecks.forEach((deck, index) => {
+    const button = document.createElement("button");
+    button.className = "slide-tab";
+    button.type = "button";
+    button.setAttribute("role", "tab");
+    button.textContent = `${deck.label} (${deck.slides.length})`;
+    button.addEventListener("click", () => selectDeck(index));
+    tabs.append(button);
   });
+
+  selectDeck(0);
 }
 
 closeLightbox.addEventListener("click", () => lightbox.close());
